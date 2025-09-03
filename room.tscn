@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://ch0ypcscwcbtu"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_v321d"]
+
+[node name="Room" type="Node2D"]
+
+[node name="Background" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(320, 180)
+offset_right = 320.0
+offset_bottom = 180.0
+color = Color(0, 0, 0, 1)
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+shape = SubResource("CircleShape2D_v321d")
